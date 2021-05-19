@@ -19,7 +19,7 @@ def server_handler(client):
             print('Error~!')
             break
 
-        if (not data) or (data.decode('urf-8') == 'q'):
+        if (not data) or (data.decode('utf-8') == 'q'):
             print("OUT")
             break
         

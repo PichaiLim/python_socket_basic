@@ -28,7 +28,7 @@ def client_handler(client, addr):
         print('---------')
         
         for c in clist:
-            c.snedall(msg.endcode('utf-8'))
+            c.sendall(msg.encode('utf-8'))
 
     client.close()
 
