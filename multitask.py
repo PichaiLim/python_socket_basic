@@ -29,6 +29,8 @@ start = time.time() # จำเวลาเริ่มต้น
 ''' เรียกใช้งาน Threading ในการแสดงผล '''
 task1.start()
 task2.start()
+task1.join()
+task2.join()
 
 end = time.time() # จำเวลาสิ้นสุด
 print('All Time: ', end - start)
