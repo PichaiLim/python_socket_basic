@@ -26,6 +26,7 @@ def client_handler(client, addr):
         msg = str(addr) + ' >>>> ' + data.decode('utf-8') #ข้อความส่งไปให้ชาวบ้าน
         print('User: ')
         print('---------')
+        print('Message from ', msg.encode('utf-8'))
         
         for c in clist:
             c.sendall(msg.encode('utf-8'))
